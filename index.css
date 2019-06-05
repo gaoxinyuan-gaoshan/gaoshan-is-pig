@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header{
+    width: 100%;
+    height: 150px;
+    border-bottom: 3px solid #e4e3e3;
+    position: relative;
+}
+header div{
+    font-size: 36px;
+    font-family: 华文彩云;
+    text-align: center;
+    position: absolute;
+    top: 41%;
+    left: 37%;
+}
+main{
+    width: 900px;
+    height: auto;
+    margin: 20px auto;
+    font-size: 20px;
+}
+.hhh{
+    position: relative;
+}
+img{
+    width: 296px;
+    height: 296px;
+}
+.hhh span{
+    font-size: 25px;
+    color: rgba(0,0,0,0.6);
+    text-align: center;
+    position: absolute;
+    top: 46%;
+    left: 0;
+    right: -50px;
+}
+.tab{
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+.tab li{
+    height: 100%;
+    flex-grow: 1;
+    text-align: center;
+    line-height: 50px;
+
+    /*line-height: 3;*/
+}
+.tab > li.hot{
+    /*background: #90f5ff;*/
+    color: white;
+}
+.tab >.top{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: plum;
+    z-index: -1;
+    transition: all ease-in .5s;
+}
+li.hot:nth-child(1)~.top{
+    transform: translate(0,0);
+}
+li.hot:nth-child(2)~.top{
+    transform: translate(100%,0);
+}
+li.hot:nth-child(3)~.top{
+    transform: translate(200%,0);
+}
+.content > li{
+    font-size: 24px;
+    line-height: 3;
+    border-bottom: 1px solid #e4e3e3;
+    padding: 0 10px;
+}
+.content > li >p{
+    display: inline-block;
+}
+.content > li >time{
+    float: right;
+}
+.content > li > span{
+    float: right;
+}
